@@ -35,10 +35,7 @@ namespace OpenHouse1
 
             Console.WriteLine("Hello, welcome to my open house");
 
-            Console.WriteLine("Would you like to see the kitchen?");
-            string userResponse = Console.ReadLine();
-
-            if (userResponse.ToLower() == "y" || userResponse.ToLower() == "yes")
+            if (UI.UserAnswersYes("Would you like to see the kitchen?"))
             {
                 Console.WriteLine("Well there is a lot of trash in there, I hope you dont smell it");
             }
@@ -46,10 +43,8 @@ namespace OpenHouse1
             {
                 Console.WriteLine("Well ok, lets check out some furniture!");
             }
-            Console.WriteLine("Would you like to see the furniture?");
-            userResponse = Console.ReadLine();
 
-            if (userResponse.ToLower() == "y" || userResponse.ToLower() == "yes")
+            if (UI.UserAnswersYes("Would you like to see the furniture?"))
             {
                 Console.WriteLine("Well, the couch is a little dusty");
             }
