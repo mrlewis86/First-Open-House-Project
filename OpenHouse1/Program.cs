@@ -50,7 +50,7 @@ namespace OpenHouse1
             }
 
             Console.WriteLine("How about we check out the next room");
-            Console.WriteLine("Ahh!! we have arrived, this is the Dining Room!!");
+            Console.WriteLine($"Ahh!! we have arrived, this is the {DiningRoom.Name}!!");
             
             foreach(string Description in DiningRoom.Descriptions)
             {
